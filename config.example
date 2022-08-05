@@ -1,0 +1,3 @@
+# Whether install the specific module without interactive input.
+# 1/yes = Yes, 0/no = No
+dotfiles_install_MODULE=0

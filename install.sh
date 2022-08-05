@@ -6,6 +6,10 @@ base_dir=$(dirname "$(realpath "$0")")
 
 source "$base_dir"/functions.sh
 
+if [[ -f "$base_dir"/config ]]; then
+    source "$base_dir"/config
+fi
+
 cd "$base_dir"/modules
 
 for module in *; do

@@ -1,0 +1,8 @@
+.DS_Store
+._*
+Thumbs.db
+
+.idea/
+.buildpath
+.project
+.settings/

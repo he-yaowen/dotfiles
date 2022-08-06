@@ -1,3 +1,7 @@
 # Whether install the specific module without interactive input.
 # 1/yes = Yes, 0/no = No
 dotfiles_install_MODULE=0
+
+# Settings for Git
+dotfiles_git_name="Your Name"
+dotfiles_git_email="your.name@email.com"

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+global_gitconfig="$HOME/.gitconfig"
+dotfiles_gitconfig="$base_dir/modules/git/gitconfig"
+local_gitconfig="$dotfiles_gitconfig".local
+
+cp "$dotfiles_gitconfig" "$local_gitconfig"
+
+if [ "$dotfiles_git_name" = "" ]; then
+    read -r -p "[git] global name: " dotfiles_git_name
+fi
+
+if [ "$dotfiles_git_email" = "" ]; then
+    read -r -p "[git] global email: " dotfiles_git_email
+fi
+
+dotfiles_file_backup "$global_gitconfig"
+
+dotfiles_file_replace "$local_gitconfig" DOTFILES_BASE_DIR "$base_dir"
+dotfiles_file_replace "$local_gitconfig" DOTFILES_GIT_NAME "$dotfiles_git_name"
+dotfiles_file_replace "$local_gitconfig" DOTFILES_GIT_EMAIL "$dotfiles_git_email"
+
+ln -sf "$local_gitconfig" "$global_gitconfig"

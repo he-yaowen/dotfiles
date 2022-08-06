@@ -1,0 +1,16 @@
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	cl = clone
+[color]
+	ui = true
+[credential]
+	helper = store
+[core]
+	excludesfile = DOTFILES_BASE_DIR/modules/git/gitignore_global
+	pager = less -X
+[user]
+	name = DOTFILES_GIT_NAME
+	email = DOTFILES_GIT_EMAIL

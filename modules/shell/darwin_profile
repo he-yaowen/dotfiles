@@ -1,0 +1,5 @@
+PATH="$HOME/.dotfiles/bin/darwin:$PATH"
+
+HOMEBREW_NO_AUTO_UPDATE=1
+
+export MONO_GAC_PREFIX="/usr/local"

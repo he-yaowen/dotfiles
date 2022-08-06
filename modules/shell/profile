@@ -1,0 +1,7 @@
+export PATH="$HOME/.dotfiles/bin:$HOME/.local/bin:$HOME/bin:$PATH"
+
+alias ls='ls --color=auto'
+alias ll='ls -lhA'
+alias l='ls -lh'
+alias la='ls -A'
+alias grep='grep --color=auto'

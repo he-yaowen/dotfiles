@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+shell_type=$(basename "$SHELL")
+
+case $shell_type in
+    bash)
+        shell_profile="$HOME/.bashrc"
+        ;;
+    zsh)
+        shell_profile="$HOME/.zshrc"
+        ;;
+esac
+
+dotfiles_file_backup "$shell_profile"
+
+echo "source $base_dir/modules/shell/profile" >> $shell_profile
+echo "source $base_dir/modules/shell/${shell_type}_profile" >> $shell_profile
+echo "source $base_dir/modules/shell/${OSTYPE}_profile" >> $shell_profile

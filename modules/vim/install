@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+vim="$HOME/.vim"
+vimrc="$HOME/.vimrc"
+
+dotfiles_file_backup "$vim" "$vimrc"
+
+ln -sf "$base_dir"/modules/vim/vim "$vim"
+ln -sf "$base_dir"/modules/vim/vimrc "$vimrc"

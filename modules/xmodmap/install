@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+xmodmap_file="$HOME/.Xmodmap"
+
+dotfiles_backup "$xmodmap_file"
+
+ln -sf "$base_dir"/modules/xmodmap/Xmodmap "$xmodmap_file"

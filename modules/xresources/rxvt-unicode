@@ -1,0 +1,74 @@
+! vim: set ft=xdefaults :
+
+! General
+URxvt.termName: rxvt-unicode-256color
+URxvt.utf8: True
+URxvt.locale: True
+
+! Looking Style
+URxvt.borderLess: False
+URxvt.cursorBlink: False
+URxvt.saveLines: 65536
+URxvt.scrollBar: True
+URxvt.scrollBar_right: True
+URxvt.scrollBar_floating: True
+URxvt.scrollstyle: plain
+URxvt.scrollTtyOutput: False
+URxvt.scrollWithBuffer: True
+URxvt.scrollTtyKeypress: True
+
+! Extensions
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+
+! Input Method
+URxvt.preeditType: OffTheSpot
+URxvt.inputMethod: fcitx
+
+! Fonts
+URxvt.font: xft:Source Code Pro for Powerline:size=14, xft:Source Code Pro for Powerline:size=14
+URxvt.boldfont: xft:Source Code Pro:style=Bold:size=14
+
+! Colorscheme
+URxvt.depth: 32
+URxvt.fading: 40
+URxvt.fadeColor: #fdf6e3
+URxvt.pointerColorBackground: #93a1a1
+URxvt.pointerColorForeground: #586e75
+
+URxvt.background: #2c2c2c
+URxvt.foreground: #dcdccc
+URxvt.cursorColor: #586e75
+
+! Black dark/light
+URxvt.color0: #3f3f3f
+URxvt.color8: #709080
+
+! Red dark/light
+URxvt.color1: #705050
+URxvt.color9: #dca3a3
+
+! Green dark/light
+URxvt.color2: #60b4a8
+URxvt.color10: #72d5a3
+
+! Yellow dark/light
+URxvt.color3: #dfaf8f
+URxvt.color11: #f0dfaf
+
+! Blue dark/light
+URxvt.color4: #9ab8d7
+URxvt.color12: #94bff3
+
+! Magenta dark/light
+URxvt.color5: #dc8cc3
+URxvt.color13: #dc8cc3
+
+! Cyan dark/light
+URxvt.color6: #8cd0d3
+URxvt.color14: #93e0e3
+
+! White dark/light
+URxvt.color7: #dcdccc
+URxvt.color15: #ffffff

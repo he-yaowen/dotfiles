@@ -1,0 +1,7 @@
+#!/bin/sh
+
+xdefaults_file="$HOME/.Xdefaults"
+
+dotfiles_backup "$xdefaults_file"
+
+echo "#include \"$base_dir/modules/xresources/Xresources\"" > "$xdefaults_file"

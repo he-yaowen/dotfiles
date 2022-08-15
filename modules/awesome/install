@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+mkdir -p "$HOME/.config"
+
+config_dir="$HOME/.config/awesome"
+
+dotfiles_backup "$config_dir"
+
+ln -sf "$base_dir"/modules/awesome "$config_dir"
